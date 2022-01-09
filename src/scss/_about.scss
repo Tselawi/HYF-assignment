@@ -1,0 +1,109 @@
+.about-container {
+    position: relative;
+    background-color: rgb(43, 43, 44);
+    height: 50%;
+
+    .hr {
+        width: 43%;
+        height: 57%;
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+        position: absolute;
+        top: 25%;
+        left: 14%;
+
+    }
+
+    .about-content {
+        background-color: rgb(60, 60, 63);
+        width: 45%;
+        height: 420px;
+        position: absolute;
+        top: -90px;
+        right: 15px;
+        z-index: 3;
+        color: #fff;
+        padding: 48px;
+        border-radius: 10px;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.3rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 35px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+.skill-container {
+    position: relative;
+    background-color: rgb(43, 43, 44);
+    height: 100%;
+
+    .skill-content {
+        background-color: rgb(60, 60, 63);
+        width: 40%;
+        position: absolute;
+        top: -90px;
+        left: 15px;
+        z-index: 1;
+        color: #fff;
+        padding: 68px;
+        border-radius: 10px;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.3rem;
+            margin-bottom: 30px;
+        }
+
+        .show-skill {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 25px;
+        }
+
+    }
+
+    .btn-show {
+        margin-top: 30px;
+
+        padding: 10px;
+        background-color: rgb(3, 122, 251);
+        border-style: none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+
+        &:hover {
+            background-color: #fff;
+            color: rgb(3, 122, 251);
+        }
+
+    }
+
+    .hr-skill {
+        width: 25%;
+        border-bottom: 1px solid red;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+
+}
+
+.show {
+    overflow: hidden;
+    height: 180px;
+}

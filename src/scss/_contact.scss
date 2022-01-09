@@ -1,0 +1,46 @@
+.contact {
+    position: relative;
+    background-color: rgb(43, 43, 44);
+    height: 10%;
+
+    .contact-content {
+        background-color: rgb(60, 60, 63);
+        width: 35%;
+        position: absolute;
+        bottom: 200px;
+        right: 15px;
+        z-index: 3;
+        color: #fff;
+        padding: 48px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        label {
+            padding: 10px;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        .btn-contact {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgb(3, 122, 251);
+            border-style: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}

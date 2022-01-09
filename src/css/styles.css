@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Fira Code', monospace;
+  height: 100vh; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 1px 9px 22px 0px rgba(0, 0, 0, 0.68);
+  -webkit-box-shadow: 1px 9px 22px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 1px 9px 22px 0px rgba(0, 0, 0, 0.68);
+  position: fixed; }
+
+.navbar:hover .blur {
+  -webkit-filter: blur(0); }
+
+.blur {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  left: 0;
+  background-image: url("https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: filter 0.3s ease;
+  -webkit-filter: blur(8px);
+  z-index: -2; }
+
+.nav-links a {
+  color: #fff; }
+
+.logo {
+  font-size: 32px;
+  margin-bottom: 5px; }
+  .logo a {
+    color: #fff; }
+
+.menu {
+  display: flex;
+  gap: 2em;
+  font-size: 18px; }
+  .menu .fa-house-user {
+    font-size: 1.3rem; }
+  .menu li:hover {
+    background-color: #f12f36;
+    border-radius: 5px;
+    transition: 0.3s ease; }
+  .menu li {
+    padding: 5px 14px; }
+  .menu .fa-file-pdf {
+    font-size: 1.3rem; }
+  .menu li:nth-child(4) {
+    margin-left: 30px; }
+    .menu li:nth-child(4) .fa-github-square {
+      font-size: 1.3rem; }
+  .menu li:nth-child(5) {
+    margin-left: -30px; }
+    .menu li:nth-child(5) .fa-linkedin {
+      font-size: 1.3rem; }
+
+/* navbar menu*/
+input[type=checkbox] {
+  display: none; }
+
+.hamburger {
+  display: none;
+  font-size: 34px;
+  user-select: none; }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 40px 0; }
+    .menu li:hover {
+      display: inline-block;
+      background-color: #f12f36;
+      transition: 0.3s ease; }
+    .menu li:nth-child(4) {
+      margin-left: 0px; }
+      .menu li:nth-child(4) .fa-github-square {
+        font-size: 1.3rem; }
+    .menu li:nth-child(5) {
+      margin-left: 0px; }
+      .menu li:nth-child(5) .fa-linkedin {
+        font-size: 1.3rem; }
+  input[type=checkbox]:checked ~ .menu {
+    display: block; }
+  .hamburger {
+    display: block; } }
+
+.main {
+  position: relative;
+  z-index: -4;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1488554378835-f7acf46e6c98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px; }
+
+.container {
+  position: absolute;
+  top: 10%;
+  padding: 40px; }
+  .container p {
+    color: #e94040;
+    font-size: 1.4rem;
+    margin-bottom: 30px; }
+  .container h1 {
+    color: #fff;
+    font-size: 2.6rem; }
+
+.about-container {
+  position: relative;
+  background-color: #2b2b2c;
+  height: 50%; }
+  .about-container .hr {
+    width: 43%;
+    height: 57%;
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    position: absolute;
+    top: 25%;
+    left: 14%; }
+  .about-container .about-content {
+    background-color: #3c3c3f;
+    width: 45%;
+    height: 420px;
+    position: absolute;
+    top: -90px;
+    right: 15px;
+    z-index: 3;
+    color: #fff;
+    padding: 48px;
+    border-radius: 10px; }
+    .about-container .about-content h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 2.3rem;
+      margin-bottom: 30px; }
+    .about-container .about-content p {
+      margin-bottom: 35px;
+      font-size: 1.3rem; }
+
+.skill-container {
+  position: relative;
+  background-color: #2b2b2c;
+  height: 100%; }
+  .skill-container .skill-content {
+    background-color: #3c3c3f;
+    width: 40%;
+    position: absolute;
+    top: -90px;
+    left: 15px;
+    z-index: 1;
+    color: #fff;
+    padding: 68px;
+    border-radius: 10px; }
+    .skill-container .skill-content h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 2.3rem;
+      margin-bottom: 30px; }
+    .skill-container .skill-content .show-skill {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 25px;
+      grid-row-gap: 25px; }
+  .skill-container .btn-show {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #037afb;
+    border-style: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 100%; }
+    .skill-container .btn-show:hover {
+      background-color: #fff;
+      color: #037afb; }
+  .skill-container .hr-skill {
+    width: 25%;
+    border-bottom: 1px solid red;
+    position: absolute;
+    top: 30%;
+    left: 40%; }
+
+.show {
+  overflow: hidden;
+  height: 180px; }
+
+.contact {
+  position: relative;
+  background-color: #2b2b2c;
+  height: 10%; }
+  .contact .contact-content {
+    background-color: #3c3c3f;
+    width: 35%;
+    position: absolute;
+    bottom: 200px;
+    right: 15px;
+    z-index: 3;
+    color: #fff;
+    padding: 48px;
+    border-radius: 10px; }
+  .contact h1 {
+    text-align: center; }
+  .contact .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .contact .contact-form label {
+      padding: 10px; }
+    .contact .contact-form input {
+      padding: 10px; }
+    .contact .contact-form .btn-contact {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #037afb;
+      border-style: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer; }
+
+footer {
+  text-align: center;
+  background-color: #2b2b2c;
+  height: 15vh;
+  color: #fff;
+  font-size: 1.2rem; }
+  footer hr {
+    height: 1px;
+    background-color: grey;
+    border: none;
+    margin-bottom: 25px; }
+
+/*# sourceMappingURL=styles.css.map */
