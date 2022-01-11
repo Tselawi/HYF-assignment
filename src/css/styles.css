@@ -131,9 +131,15 @@ input[type=checkbox] {
     color: #e94040;
     font-size: 1.4rem;
     margin-bottom: 30px; }
+    @media (max-width: 768px) {
+      .container p {
+        font-size: .9rem; } }
   .container h1 {
     color: #fff;
     font-size: 2.6rem; }
+    @media (max-width: 768px) {
+      .container h1 {
+        font-size: 1.7rem; } }
 
 .about-container {
   position: relative;
@@ -163,9 +169,15 @@ input[type=checkbox] {
       justify-content: center;
       font-size: 2.3rem;
       margin-bottom: 30px; }
+      @media (max-width: 768px) {
+        .about-container .about-content h1 {
+          font-size: 1.7rem; } }
     .about-container .about-content p {
       margin-bottom: 35px;
       font-size: 1.3rem; }
+      @media (max-width: 768px) {
+        .about-container .about-content p {
+          font-size: 0.8rem; } }
 
 .skill-container {
   position: relative;
@@ -186,6 +198,9 @@ input[type=checkbox] {
       justify-content: center;
       font-size: 2.3rem;
       margin-bottom: 30px; }
+      @media (max-width: 768px) {
+        .skill-container .skill-content h1 {
+          font-size: 1.7rem; } }
     .skill-container .skill-content .show-skill {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -203,6 +218,9 @@ input[type=checkbox] {
     cursor: pointer;
     display: block;
     width: 100%; }
+    @media (max-width: 768px) {
+      .skill-container .btn-show {
+        font-size: .7rem; } }
     .skill-container .btn-show:hover {
       background-color: #fff;
       color: #037afb; }
@@ -250,6 +268,109 @@ input[type=checkbox] {
       color: #fff;
       font-size: 1rem;
       cursor: pointer; }
+      @media (max-width: 768px) {
+        .contact .contact-form .btn-contact {
+          font-size: .7rem; } }
+
+.project-header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; }
+
+.siteTitle {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 20px 0; }
+  @media (min-width: 768px) {
+    .siteTitle {
+      font-size: 60px; } }
+
+.project-header,
+.project-main {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.card {
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #b0215e;
+  margin-bottom: 20px;
+  background-image: url("../assets/images/charatermanager.png");
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .card {
+      height: 500px; } }
+
+.inner {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  padding: 40px; }
+  @media (min-width: 768px) {
+    .inner {
+      width: 50%;
+      height: 100%; } }
+
+.title {
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  color: #181818;
+  text-shadow: 0px 2px 2px #a6f8d5;
+  position: relative;
+  margin: 0 0 20px 0; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 30px; } }
+
+.subtitle {
+  color: #b0215e;
+  text-align: center; }
+
+.techs {
+  width: 80%;
+  text-align: left;
+  border: 4px solid #b0215e;
+  margin: 20px 0; }
+  .techs h3 {
+    margin: 15px 0;
+    color: #181818;
+    text-shadow: 0px 2px 2px #a6f8d5; }
+  .techs li {
+    list-style: square;
+    margin: 0 25px;
+    color: #b0215e; }
+
+.card2 {
+  background-image: url("../assets/images/Mac-app.png"); }
+
+.card3 {
+  background-image: url("../assets/images/weatherapp.png"); }
+
+.card3 {
+  background-image: url("../assets/images/weatherapp.png"); }
+
+.card4 {
+  background-image: url("../assets/images/cogip.png"); }
+
+.card5 {
+  background-image: url("../assets/images/pomodoro.png"); }
+
+.card6 {
+  background-image: url("../assets/images/supro.png"); }
+
+.card7 {
+  background-image: url("../assets/images/pets.png"); }
 
 footer {
   text-align: center;
@@ -257,6 +378,9 @@ footer {
   height: 15vh;
   color: #fff;
   font-size: 1.2rem; }
+  @media (max-width: 768px) {
+    footer {
+      font-size: .7rem; } }
   footer hr {
     height: 1px;
     background-color: grey;

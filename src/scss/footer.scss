@@ -1,9 +1,19 @@
+@mixin media() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 footer {
     text-align: center;
     background-color: rgb(43, 43, 44);
     height: 15vh;
     color: #fff;
     font-size: 1.2rem;
+
+    @include media {
+        font-size: .7rem;
+    }
 
     hr {
         height: 1px;
